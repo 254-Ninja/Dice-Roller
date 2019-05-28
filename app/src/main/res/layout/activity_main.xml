@@ -11,11 +11,12 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:text="@string/_1"
-    android:textSize="30sp"/>
+            android:textSize="30sp"/>
 
-    <Button android:layout_width="wrap_content"
+    <Button android:id="@+id/roll_button"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-    android:text="@string/roll"/>
+            android:text="@string/roll"/>
 
 </LinearLayout>
