@@ -3,6 +3,8 @@ package com.varsity.deno.diceroller
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,8 +16,22 @@ class MainActivity : AppCompatActivity() {
         rollButton.text = "Let's Roll"
 
         rollButton.setOnClickListener {
-            Toast.makeText(this, "button clicked", Toast.LENGTH_SHORT).show()
+            rollButton.setOnClickListener {
+                rollDice()
+            }
+
         }
+    }
+
+    private fun rollDice() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+        val randomInt = Random().nextInt(6) + 1
+
+        val resultText: TextView = findViewById(R.id.result_text)
+
+        resultText.text = randomInt.toString()
 
     }
 }
+
